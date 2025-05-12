@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permission to use the camera -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Permission to record audio (if required) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Permission for Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Specifies that this app requires a camera, but it is not required for front camera -->
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.TTSOCRApplication"
+        android:label="BlindMate"
+        android:icon="@mipmap/ic_launcher"> <!-- Set app icon here -->
+        <activity android:name="com.example.tts_ocrapplication.MainActivity"
+            android:exported="true" android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+    <meta-data
+        android:name="com.google.android.vision.API_KEY"
+        android:value="${GOOGLE_CLOUD_VISION_API_KEY}" />
+
+
+</manifest>

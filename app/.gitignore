@@ -1,0 +1,9 @@
+# Gradle
+.gradle/
+build/
+*/build/
+app/build/
+captures/
+local.properties
+.idea/
+out/
