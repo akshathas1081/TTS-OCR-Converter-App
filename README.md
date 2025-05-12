@@ -18,7 +18,8 @@ An Android application designed to assist visually impaired users by converting 
 
 ## 📷 Screenshots
 
-![image](https://github.com/user-attachments/assets/415eae41-dfc8-4e7e-a967-c6463f517170)
+
+![image](https://github.com/user-attachments/assets/004474fb-07de-40b5-9995-401293927ee5)
 
 
 ## 🚀 How to Run
